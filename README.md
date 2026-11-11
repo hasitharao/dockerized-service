@@ -65,3 +65,6 @@ docker run --rm --entrypoint sh dockerized-service -c 'ls -a /app'
 - The registry login on the server uses the job's short-lived `GITHUB_TOKEN`, and it logs out afterwards.
 - Secrets are scoped to a GitHub Environment instead of the whole repository.
 - Basic Auth over plain HTTP is only acceptable here because traffic stays inside the encrypted tailnet. On a public server, put TLS in front (for example Caddy).
+
+Project page:   printf '\nProject page: %s\n' "$(pbpaste)" >> README.md
+  git add README.md && git commit -m "Link roadmap.sh project page [skip ci]" && git push
