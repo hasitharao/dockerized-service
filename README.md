@@ -68,3 +68,7 @@ docker run --rm --entrypoint sh dockerized-service -c 'ls -a /app'
 
 Project page:   printf '\nProject page: %s\n' "$(pbpaste)" >> README.md
   git add README.md && git commit -m "Link roadmap.sh project page [skip ci]" && git push
+
+## Project page
+
+https://roadmap.sh/projects/dockerized-service-deployment
